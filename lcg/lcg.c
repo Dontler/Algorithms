@@ -6,7 +6,7 @@ unsigned int seed = 1;
 unsigned int lcg() {
 	int a = 16807;
 	unsigned int m = 0x7fffffff;
-	//Vars a and m depends on the compilator
+	//Values a and m are compiler dependent
 	seed = seed * a % m;
 	return seed;
 }
